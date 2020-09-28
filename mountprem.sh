@@ -16,8 +16,8 @@ TV:/ /mnt/TV \\
 --allow-other \\
 --dir-cache-time 1000h \\
 --vfs-cache-mode full \\
---vfs-cache-max-age 1h \\
---vfs-cache-max-size 1G \\
+--vfs-cache-max-age 5m \\
+--vfs-cache-max-size 25G \\
 --vfs-read-chunk-size-limit 512M \\
 --vfs-read-chunk-size 64M --buffer-size 32M \\
 --rc --rc-no-auth --rc-addr :55718
@@ -51,8 +51,8 @@ TV2:/ /mnt/TV2 \\
 --allow-other \\
 --dir-cache-time 1000h \\
 --vfs-cache-mode full \\
---vfs-cache-max-age 1h \\
---vfs-cache-max-size 1G \\
+--vfs-cache-max-age 5m \\
+--vfs-cache-max-size 25G \\
 --vfs-read-chunk-size-limit 512M \\
 --vfs-read-chunk-size 64M --buffer-size 32M \\
 --rc --rc-no-auth --rc-addr :55719
@@ -87,8 +87,8 @@ Movies:/ /mnt/Movies \\
 --allow-other \\
 --dir-cache-time 1000h \\
 --vfs-cache-mode full \\
---vfs-cache-max-age 1h \\
---vfs-cache-max-size 1G \\
+--vfs-cache-max-age 5m \\
+--vfs-cache-max-size 25G \\
 --vfs-read-chunk-size-limit 512M \\
 --vfs-read-chunk-size 64M --buffer-size 32M \\
 --rc --rc-no-auth --rc-addr :55717

@@ -20,8 +20,8 @@ TV:/ /mnt/TV \\
 --vfs-cache-max-size 1G \\
 --vfs-read-chunk-size-limit 512M \\
 --vfs-read-chunk-size 64M --buffer-size 32M \\
---rc --rc-no-auth --rc-addr :45671
-ExecStartPost=/usr/bin/rclone rc vfs/refresh recursive=true --rc-addr 127.0.0.1:45671 _async=true
+--rc --rc-no-auth --rc-addr :55718
+ExecStartPost=/usr/bin/rclone rc vfs/refresh recursive=true --rc-addr 127.0.0.1:55718 _async=true
 ExecStop=/bin/fusermount -uz /mnt/TV > /dev/null
 TimeoutSec=60
 User=0
@@ -55,8 +55,8 @@ TV2:/ /mnt/TV2 \\
 --vfs-cache-max-size 1G \\
 --vfs-read-chunk-size-limit 512M \\
 --vfs-read-chunk-size 64M --buffer-size 32M \\
---rc --rc-no-auth --rc-addr :45672
-ExecStartPost=/usr/bin/rclone rc vfs/refresh recursive=true --rc-addr 127.0.0.1:45672 _async=true
+--rc --rc-no-auth --rc-addr :55719
+ExecStartPost=/usr/bin/rclone rc vfs/refresh recursive=true --rc-addr 127.0.0.1:55719 _async=true
 ExecStop=/bin/fusermount -uz /mnt/TV2 > /dev/null
 TimeoutSec=60
 User=0
@@ -91,8 +91,8 @@ Movies:/ /mnt/Movies \\
 --vfs-cache-max-size 1G \\
 --vfs-read-chunk-size-limit 512M \\
 --vfs-read-chunk-size 64M --buffer-size 32M \\
---rc --rc-no-auth --rc-addr :45673
-ExecStartPost=/usr/bin/rclone rc vfs/refresh recursive=true --rc-addr 127.0.0.1:45673 _async=true
+--rc --rc-no-auth --rc-addr :55717
+ExecStartPost=/usr/bin/rclone rc vfs/refresh recursive=true --rc-addr 127.0.0.1:55717 _async=true
 ExecStop=/bin/fusermount -uz /mnt/Movies > /dev/null
 TimeoutSec=60
 User=0
